@@ -5,8 +5,9 @@
 Este projeto é um **BACKEND** para um jogo de palavras inspirado no Wordle. O objetivo do jogo é adivinhar uma palavra de 5 letras em até 6 tentativas.
 
 A API tem duas funções principais:
-✅ Definir diariamente a palavra que os jogadores devem adivinhar.
-✅ Verificar e validar as tentativas dos jogadores, fornecendo feedback sobre acertos e posições das letras.
+
+✅ Definir diariamente a palavra que os jogadores devem adivinhar.<br>
+✅ Verificar e validar as tentativas dos jogadores, fornecendo feedback sobre acertos e posições das letras.<br>
 
 
 ## 🖥️Tecnologias
@@ -63,13 +64,13 @@ Respostas:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/Ric002x/...
+   git clone https://github.com/Ric002x/ROPSecretWord_Backend
    ```
 
 2. Acesse o diretório do projeto:
 
    ```bash
-   cd ...
+   cd ROPSecretWord_Backend
    ```
 
 3. Crie e ative um ambiente virtual:
