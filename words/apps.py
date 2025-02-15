@@ -7,5 +7,12 @@ class WordsConfig(AppConfig):
     name = 'words'
 
     def ready(self):
+        """Inicia o agendador apenas após as migrações serem concluídas."""
         from words import schedule
-        schedule.start()
+
+        def iniciar_scheduler(sender, **kwargs):
+            print("🔄 Iniciando o scheduler após as migrações...")
+            schedule.start()
+            print("✅ Scheduler iniciado com sucesso!")
+
+        post_migrate.connect(iniciar_scheduler, sender=self)
